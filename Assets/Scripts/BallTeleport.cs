@@ -10,6 +10,7 @@ public class BallTeleport : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+        rigidbody.maxAngularVelocity = 100;
         startPos = this.transform.position;
     }
 
